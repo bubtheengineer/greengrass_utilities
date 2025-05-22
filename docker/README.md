@@ -2,6 +2,8 @@
 
 This script serves as the entrypoint for AWS IoT Greengrass V2 in a containerized environment. It handles the installation, configuration, and startup of the Greengrass nucleus with support for automatic deployment (and automatic re-deployment)
 
+Note: The big advantage of this script is that it enables Greengrass to run Docker containers within the same Docker environment (Containers launched by Greengrass are siblings instead of children).  There is no need for Docker-in-Docker or any such rediculousness.  What are the security implications of this?  Nothing good, but you shouldn't be using this outside of a development environment.
+
 ## Features
 
 - Automated Greengrass V2 installation and configuration
