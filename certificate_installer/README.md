@@ -1,6 +1,6 @@
 # Greengrass Certificate Installer
 
-This utility retrieves self-signed certificates for a Greengrass device and installs them in the local truststore. It can either save the certificates to a specified directory or install them directly into the Windows certificate store.
+When connecting to an MQTT server running within a AWS IoT Greengrass device, the client has to use cloud discovery to retrieve the address of the MQTT server (not usually necessary for OT), and the self-signed certificate (software like Kepware requires the certificate, MQTT Explorer and other MQTT clients can be set to skip the certificate validation).  This utility retrieves self-signed certificates for a Greengrass device and installs them in the local truststore. It can either save the certificates to a specified directory or install them directly into the Windows certificate store.
 
 ## Prerequisites
 
